@@ -1,33 +1,73 @@
-# Twitter Analytics Dashboard – Internship Project
+# Twitter Analytics Dashboard – Power BI Internship Project
 
 ## Domain
 Data Analytics
 
 ## Tool Used
-Power BI
+- Microsoft Power BI
 
 ## Dataset
-Twitter Analytics Dataset (Training Project Dataset)
+- Twitter Analytics Dataset (Training Project Dataset)
 
 ## Project Overview
-This project extends the training Twitter Analytics dashboard by implementing multiple advanced analytical tasks as separate report pages.
+This project is an extension of the Twitter Analytics training dashboard, developed as part of a Data Analytics internship.  
+All internship tasks have been implemented as additional report pages using the same dataset, in accordance with internship guidelines.
 
-## Dashboards Implemented
-- Task 1: Media Engagement vs Media Views (Scatter Chart)
-- Task 2: URL, Profile & Hashtag Clicks by Tweet Category
-- Task 3: Top 10 Tweets by Likes & Retweets
-- Task 4: Engagement Rate Trend (Media vs Non-Media)
+The dashboard analyzes tweet engagement, interactions, and trends using calculated columns, time-based filters, and business rules.
 
-## Filters & Business Rules Applied
-- Time-based filters (IST windows using calculated columns)
-- Odd / Even date conditions
-- Tweet word & character count conditions
-- Exclusion of tweets containing specific letters
-- Weekday / Weekend filters
+---
+
+## Internship Tasks Implemented
+
+### Task 1: Media Engagement vs Media Views
+- Scatter chart analyzing the relationship between media engagements and media views.
+- Filters include replies threshold, tweet word count, odd dates, and time logic (6 PM – 11 PM IST).
+
+### Task 2: Click Interactions by Tweet Category
+- Clustered bar/column chart comparing URL clicks, profile clicks, and hashtag clicks.
+- Breakdown by tweet category with date, word count, and time-based conditions (3 PM – 5 PM IST).
+
+### Task 3: Top 10 Tweets by Likes and Retweets
+- Visualization showing top-performing tweets based on combined likes and retweets.
+- Weekend tweets excluded and additional content-based filters applied.
+
+### Task 4: Engagement Rate Trend Analysis
+- Line chart showing monthly trends of average engagement rate.
+- Separate lines for tweets with media and without media.
+- Time-based and content-based rules applied.
+
+### Task 5: Media Engagement Comparison
+- Comparison of replies, retweets, and likes for tweets with media engagements above the median value.
+- Date range and parity-based conditions applied.
+
+### Task 6: Engagement Rate Comparison – App Opens
+- Comparison of engagement rates for tweets with and without app opens.
+- Weekday-only analysis with time, date, and content-based filters.
+
+---
+
+## Data Transformations & Calculated Columns
+- TweetWordCount
+- TweetCharacterCount
+- IsOddDate / IsEvenDate
+- Time-based columns (IsTime_3PM_5PM, IsTime_6PM_11PM, IsTime_7AM_11AM, IsValidTime)
+- Interaction flags (HasAnyClick, AppOpenFlag)
+- Text-based exclusion columns (NoLetterC, NoLetterD, NoLetterS)
+
+---
+
+## Project Files
+- **Power BI Report:** `Twitter_Analytics_Master.pbix`
+- **Screenshots:** Available in the `screenshots` folder
+- **Documentation:** Complete project report available in the `documentation` folder
+
+---
 
 ## Note
-Some visuals may appear blank after applying all constraints due to limited data availability within the specified conditions.
+Some visuals may appear blank after applying all business constraints due to limited data availability within specific conditions.  
+This reflects strict business rules rather than implementation issues.
 
-## Files
-- Twitter_Analytics_Master.pbix
-- Screenshots of all dashboards
+---
+
+## Author
+Internship Project – Data Analytics
